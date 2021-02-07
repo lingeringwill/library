@@ -1,12 +1,15 @@
 #include <iostream>
 #include <string>
 #include "Book.h"
+#include "Inventory.h"
+#include "string"
 
-int main()
-{
+using std::basic_string;
 
-while(true)
-{
+Inventory _inventory;
+int main() {
+
+  while (true) {
 
     std::cout << "choose an option: " << std::endl;
     std::cout << "1. add book" << std::endl;
@@ -18,6 +21,32 @@ while(true)
 
     int input;
     std::cin >> input;
-}
+    
+    switch (input)
+    {
+    case 0:
+         std::cout<< "Thank you. goodbye" << std::endl;
+         return 0;
+    case 1:
+        std::cout << "Title: ";
 
+        std::string title;
+        std::getline(std::cin, title);
+         _inventory.AddBook();
+    break;
+    case 2:
+
+    break;
+    case 3:
+
+    break;
+    case 4:
+
+    break;
+        default:
+        std::cout<< "invalid selection. " << std::endl;
+  
+    
+    }
+}
 }
