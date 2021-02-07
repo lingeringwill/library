@@ -4,8 +4,7 @@
  Book::Book(int id, std::string title, std::string author)
 {
 
-  id = ID;
-  title = Title;
-  author = Author;
-
+  ID = id;
+  Title = title;
+  Author = author; 
 }
